@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jsscript.js"> </script>
+<script>
+$(document).ready(function(){
+	$("p").bind("click", function(event){
+		var str= "("+event.pageX+","+event.pageY+")";
+		$("span").text("This is a Single Click!"+str);
+		});
+	$("p").bind("dblclick",function(){
+		$("span").text("This is Double Click on"+this.nodeName);
+		});
+	$("p").bind("mouseenter mouseleave", function(event){
+		$(this).toggleClass("over");
+		});
+});
+
+
+	
+</script>
+<style>
+p{
+background-color:yellow;
+font-weight:bold;
+cursor:pointer;
+padding:5px;
+}
+p.over{
+ background:#ccc;
+}
+span{
+color:red;
+}
+</style>  
+</head>
+<body>
+<p>CLICK OR DOUBLE CLICK ON PARAGRAPH</p>
+<span></span>
+</body>
+</html>
