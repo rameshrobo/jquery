@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jsscript.js"> </script>  
+<style>
+
+#panel, #flip {  
+    padding: 5px;  
+    text-align: center;  
+    background-color: #00FFFF;  
+    border: solid 1px #c3c3c3;  
+}  
+#panel {  
+    padding: 50px;  
+    display: none;  
+}  
+</style>
+<script>
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").slideToggle("slow");  
+    });  
+}); 
+/*
+$(document).ready(function(){
+	$("#flip").click(function(){
+		$("#panel").slideDown("slow");
+		});
+});
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").slideUp("");  
+    });  
+});
+*/
+</script>
+</head>
+<body>
+<div id="flip">Click to Slid Down Panel </div>
+<div id="panel">It is the best tutorial website to learn jQuery and other languages.</div>
+</body>
+</html>

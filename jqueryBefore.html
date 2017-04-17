@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jsscript.js"> </script>  
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("p").before("<p><b>Hello JQuery</b></p>");
+		});
+});
+
+  
+</script>
+</head>
+<body>
+<p >The background color of this paragraph is red</p>
+<h2>This is heading line</h2>
+<p>Paragraph has no background color</p>
+<button>Click Here to get the background color of first matched element</button>
+
+
+</body>
+</html>

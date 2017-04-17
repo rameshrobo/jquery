@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jsscript.js"> </script>  
+<style>
+div{
+width:100px;
+height:80px;
+float:left;
+margin:5px;
+background:orange;
+cursor:pointer;
+}
+.mod{
+	background:green;
+	cursor:default;
+}
+</style>
+<script>
+$(document).ready(function(){
+	var modWidth=70;
+	$("div").one("click",function(){
+	 	$(this).width(modWidth).addClass("mod");
+	 	modWidth-=10;
+		});
+}); 
+
+
+</script>
+
+</head>
+<body>
+<div >A</div>
+<div >B</div>
+<div >C</div>
+<div >D</div>
+<div >E</div>
+<div >F</div>
+</body>
+</html>

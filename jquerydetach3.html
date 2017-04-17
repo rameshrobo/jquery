@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jsscript.js"> </script>  
+<style>
+
+</style>
+<script>
+/*
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("body").append($("#p1").detach());
+		});
+	$("#btn2").click(function(){
+		$("body").append($("#p2").remove());
+	});
+	$("p").click(function(){
+		$(this).animate({fontSize:"+=1px"})
+		});
+});
+*/
+$(document).ready(function(){  
+    $("#btn1").click(function(){  
+        $("body").append($("#p1").detach());  
+    });  
+    $("#btn2").click(function(){  
+        $("body").append($("#p2").remove());  
+    });  
+    $("p").click(function(){  
+        $(this).animate({fontSize: "+=1px"})  
+    });  
+});  
+
+</script>
+
+</head>
+<body>
+<p id="p1"><b>This paragraph will keep its click event even after it is moved.</b></p>  
+<p id="p2">This paragraph will not keep its click event after it is moved.</p>  
+<button id = "btn1">Detach and append p element</button> 
+<button id = "btn2">Remove and append p element</button>  
+
+</body>
+</html>
